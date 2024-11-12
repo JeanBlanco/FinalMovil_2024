@@ -18,7 +18,7 @@ class WeatherService {
         return "Error";
       }
     } catch (e) {
-      return "17 (sin conectividad)";
+      return "17";
     }
   }
 }

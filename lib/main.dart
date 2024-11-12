@@ -11,7 +11,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  ThemeMode _themeMode = ThemeMode.system; // Inicia con el modo del sistema
+  ThemeMode _themeMode = ThemeMode.system;
 
   void _toggleTheme() {
     setState(() {
@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
           bodyMedium: TextStyle(color: Colors.white),
         ),
       ),
-      themeMode: _themeMode, // Cambia según el estado
+      themeMode: _themeMode,
       home: WeatherScreen(onToggleTheme: _toggleTheme),
     );
   }
